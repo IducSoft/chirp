@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+
+    /* Color palets */
+
+    --blue-twitter: #9ADCFF;
+    --azul-twitter: #1c9ae9;
+    --yellow-mockups: #fbebd0;
+    --body: #FFB2A6;
+    --footer: #FF8AAE;
+
+    /* Fonts */
+
+    --font-family-1: 'Inter', sans-serif;
+    --font-family-2: 'Outfit', sans-serif;
+    --font-family-3: 'Raleway', sans-serif;
+}
+
+/* Utilities */
+.text-right{
+
+    text-align: end;
+}
+
+.height-100{
+
+    height: 100%;
+}
+
+.centrado-flex{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinear-derecha{
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.alinear-izquierda{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.m-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container{
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+/* Navbar */
+.navbar{
+
+    background-color: var(--yellow-mockups);
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar-container{
+
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-text{
+
+    color: var(--azul-twitter);
+    font-size: 2.5rem;
+
+}
+
+.logo{
+
+    cursor: pointer;
+}
+
+.nav-list{
+
+    display: none;
+}
+
+.link{
+
+    text-decoration: none;
+    color: black;
+    margin-right: .5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.btn{
+
+    background-color: var(--azul-twitter);
+    padding: 1rem 1rem;
+    border-radius: 7px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.nav-slide{
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellow-mockups);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9998;
+    transition: transform .3s ease-in-out;
+}
+
+.eva{
+
+    transform: translateX(-100%);
+    
+}
+
+.p-relative{
+
+    position: relative;
+    
+}
+
+.close-svg > img{
+
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:992px) {
+    
+    .logo{
+
+        display: none;
+    }
+
+    .nav-list{
+
+        display: block;
+    }
+}
