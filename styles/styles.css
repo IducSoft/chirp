@@ -211,6 +211,12 @@
     height: auto;
 }
 
+.header-title{
+
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
 .table-view{
 
     display: none;
@@ -227,6 +233,34 @@
     color: #1c9ae9
 }
 
+/* Option secction */
+
+.options{
+
+    background-color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.grid-options{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.grid-options-item{
+
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.grid-icon{
+
+    width: 3em;
+}
 
 @media screen and (min-width:576px) {
     
@@ -242,7 +276,7 @@
 
 
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:980px) {
     
     .logo{
 
@@ -268,5 +302,14 @@
     .table-view{
 
         display: none;
+    }
+
+    /* Grid options */
+
+    .grid-options{
+
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
     }
 }
