@@ -262,6 +262,38 @@
     width: 3em;
 }
 
+/* TEstimonials */
+
+.testimonials{
+
+    padding: 3rem 0;
+}
+
+.card{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.span-testimonials{
+
+    display: block;
+    height: 100%;
+    
+}
+
+.span-testimonials > span{
+
+    display: block;
+}
+
+.img-testimonials{
+
+    margin-right: .5rem;
+}
+
+
+
 @media screen and (min-width:576px) {
     
     .desktop-view{
